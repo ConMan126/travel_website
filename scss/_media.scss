@@ -1,0 +1,66 @@
+// Tablets and Smaller
+@media (max-width: 900px) {
+    #header {
+        &-home {
+            h1 {
+                text-align: center;
+                background: none;
+                border: none;
+                width: 100%;
+                padding: 0;
+                border-bottom: 5px $main-color solid;
+            }
+        }
+
+        &-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .timeline {
+        &-content {
+            grid-template-columns: repeat(1,1fr);
+            padding: 2rem;
+        }
+    }
+}
+
+// SmartPhones
+@media (max-width: 500px) {
+    #header {
+        &-home {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        &-grid {
+
+            padding-top: 2rem;
+
+            h3  {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .timeline {
+        &-content {
+            padding: 1rem;
+        }
+
+        &-image {
+            img {
+                width: auto;
+                max-width: 100%;
+                height: auto;
+                
+                .lightbox {
+                    width: auto;
+                max-width: 100%;
+                height: auto;
+                }
+            }
+        }
+    }
+}
